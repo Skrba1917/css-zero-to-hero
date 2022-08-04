@@ -2,9 +2,13 @@ h2:hover {
   color: red;
 }
 
-.subtitle {
+h2[class="subtitle"] {
   color: blue;
 }
+
+/* .subtitle {
+  color: blue;
+} */
 
 #services {
   color: green;
@@ -22,9 +26,9 @@ li:last-child {
   color: steelblue;
 } */
 
-/* li:only-child {
+li:only-child {
   color: purple;
-} */
+}
 
 /* #google-link:link {
   color: blue;
@@ -44,4 +48,18 @@ textarea ~ button {
 
 ul > li {
   color: blue;
+}
+
+img[src^="../img/"] {
+  border: 10px solid black;
+}
+
+/* 
+^ - files that begin with whats after =
+$ - files that end with whats after =
+* - if it contains it anywhere after = 
+*/
+
+h2[class~="article-subtitle"] {
+  background: green;
 }
